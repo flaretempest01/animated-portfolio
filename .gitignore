@@ -1,2 +1,3 @@
 # Environment variables - DO NOT COMMIT
-.env
+.env 
+node_modules
