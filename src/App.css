@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -72,7 +72,7 @@ body {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
   position: relative;
   cursor: pointer;
 }
@@ -220,7 +220,7 @@ body {
     rgba(255, 255, 255, 0.3),
     transparent
   );
-  transition: 0.5;
+  transition: left 0.5s ease;
 }
 
 .cta-secondary:hover::before {
@@ -235,7 +235,7 @@ body {
 .social-links a {
   color: white;
   font-size: 1.5rem;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 
 .social-links a:hover {
@@ -335,7 +335,7 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
   border: 1px solid var(--card-border);
   position: relative;
   display: flex;
@@ -385,7 +385,7 @@ body {
   right: 0;
   bottom: 0;
   background: linear-gradient(
-    45,
+    45deg,
     transparent 0%,
     rgba(255, 255, 255, 0.1) 50%,
     transparent 100%
@@ -505,7 +505,7 @@ body {
   overflow: hidden;
 }
 
-.submit-btn:hover::before {
+.submit-btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -518,7 +518,7 @@ body {
     rgba(255, 255, 255, 0.2),
     transparent
   );
-  transition: 0.5s;
+  transition: left 0.5s ease;
 }
 
 .submit-btn:hover::before {
